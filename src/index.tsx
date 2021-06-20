@@ -4,12 +4,13 @@ import { unregister } from './core'
 import reportWebVitals from './core/reportWebVitals'
 import { GlobalStyles, theme } from './styles'
 import { ThemeProvider } from 'styled-components'
+import Routes from './routes'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
-			<div>Hello World</div>
+			<Routes />
 		</ThemeProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
