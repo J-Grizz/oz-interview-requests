@@ -2,15 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { unregister } from './core'
 import reportWebVitals from './core/reportWebVitals'
-import { GlobalStyles, theme } from './styles'
+import { GlobalStyles, StyledLayout, theme } from './styles'
 import { ThemeProvider } from 'styled-components'
 import Routes from './routes'
+import { Header } from './components'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
-			<Routes />
+			<StyledLayout>
+				<Header />
+				<Routes />
+			</StyledLayout>
 		</ThemeProvider>
 	</React.StrictMode>,
 	document.getElementById('root')

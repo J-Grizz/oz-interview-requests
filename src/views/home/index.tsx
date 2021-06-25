@@ -1,7 +1,12 @@
 import { FC } from 'react'
+import { HomeLayout } from './styles'
 
 const Home: FC = () => {
-	return <div>Welcome Home</div>
+	return (
+		<HomeLayout className="main-container">
+			<div></div>
+		</HomeLayout>
+	)
 }
 
 export default Home
