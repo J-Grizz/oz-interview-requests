@@ -1,10 +1,16 @@
+import background from '../assets/background-images/chewbaka.jpg'
+import backgroundMobil from '../assets/background-images/chewbaka-mobi.jpg'
+
 const theme = {
+	backgrounds: {
+		background: `lightblue url("${background}") no-repeat center center fixed`,
+		backgroundMobi: `lightblue url("${backgroundMobil}") no-repeat center center fixed`,
+	},
 	colors: {
-		background: 'radial-gradient(#282c34cc, #282c34)',
 		black: '#282c34',
 		blue: '#a0e9fd',
 		lightBlue: '#caf3fe',
-		white: 'white',
+		white: '#e1e1e1',
 	},
 	transition: '0.3s',
 }

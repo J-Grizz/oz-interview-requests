@@ -2,9 +2,10 @@ import styled, { css } from 'styled-components'
 
 const StyledLayout = styled.div`
 	${({ theme }) => css`
+		box-shadow: inset 0 115px 100px 10px rgb(0 0 0 / 65%);
 		width: 100%;
-		display: grid;
 		padding: 15px;
+		display: grid;
 		.header-container {
 			grid-area: header;
 		}
