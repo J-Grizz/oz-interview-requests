@@ -15,6 +15,13 @@ export default createGlobalStyle`
 			box-sizing: border-box;
 			font-family: LimeLight;
 		}
+
+		*,
+		*:focus,
+		*:hover {
+			outline: none;
+		}
+
 		p,
 		h1,
 		h2,
@@ -29,6 +36,19 @@ export default createGlobalStyle`
 		h2,
 		h3 {
 			text-shadow: 0 2px 13px rgba(0, 0, 0, 0.81);
+		}
+
+		.hidden-desktop {
+			@media ${device.sm} {
+				display: none;
+			}
+		}
+
+		.hidden-mobile {
+			display: none;
+			@media ${device.sm} {
+				display: block;
+			}
 		}
 
 		html {

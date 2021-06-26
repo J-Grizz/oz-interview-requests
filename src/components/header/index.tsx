@@ -1,5 +1,10 @@
 import { FC } from 'react'
-import { StyledHeader, StyledLogoContainer } from './styles'
+import {
+	StyledHeader,
+	StyledLogoContainer,
+	StyledSearchForm,
+	SearchIcon,
+} from './styles'
 import logo from '../../assets/logo/chewbab-logo.png'
 
 const Header: FC = () => {
@@ -7,12 +12,14 @@ const Header: FC = () => {
 		<StyledHeader className="header-container">
 			<StyledLogoContainer>
 				<img src={logo} alt="Wookies movie logo (baby wookie)" />
-				<h1>Wookie Movies</h1>
+				<h1 className="hidden-mobile">Wookie Movies</h1>
 			</StyledLogoContainer>
-			<form target="/search">
-				<input name="q" type="search" />
-				<button type="submit"></button>
-			</form>
+			<StyledSearchForm target="/search">
+				<input name="q" type="text" />
+				<button type="submit">
+					<SearchIcon />
+				</button>
+			</StyledSearchForm>
 		</StyledHeader>
 	)
 }
