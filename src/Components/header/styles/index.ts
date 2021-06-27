@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { SearchAlt } from '@styled-icons/boxicons-regular/SearchAlt'
-import { device } from '../../../styles'
+import { device } from 'Styles'
 export const StyledHeader = styled.header`
 	${({ theme }) => css`
 		padding: 15px;

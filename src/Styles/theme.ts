@@ -1,5 +1,5 @@
-import background from '../assets/background-images/chewbaka.jpg'
-import backgroundMobil from '../assets/background-images/chewbaka-mobi.jpg'
+import background from 'Assets/background-images/chewbaka.jpg'
+import backgroundMobil from 'Assets/background-images/chewbaka-mobi.jpg'
 
 const theme = {
 	backgrounds: {

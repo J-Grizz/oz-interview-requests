@@ -1,11 +1,6 @@
 import { FC } from 'react'
-import {
-	StyledHeader,
-	StyledLogoContainer,
-	StyledSearchForm,
-	SearchIcon,
-} from './styles'
-import logo from '../../assets/logo/chewbab-logo.png'
+import { StyledHeader, StyledLogoContainer, StyledSearchForm, SearchIcon } from './styles'
+import logo from 'Assets/logo/chewbab-logo.png'
 
 const Header: FC = () => {
 	return (

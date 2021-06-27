@@ -1,12 +1,11 @@
 import { createGlobalStyle, css } from 'styled-components'
-import { device } from './'
+import { device } from '.'
 
 export default createGlobalStyle`
   ${({ theme }) => css`
 		@font-face {
 			font-family: 'Limelight';
-			src: local('Limelight'),
-				url('../fonts/Limelight-Regular.ttf') format('truetype');
+			src: local('Limelight'), url('Fonts/Limelight-Regular.ttf') format('truetype');
 		}
 
 		*,

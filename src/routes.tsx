@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home } from './views'
+import { Home } from 'Views'
 
 const Routes: FC = () => {
 	return (

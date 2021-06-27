@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { unregister } from './core'
-import reportWebVitals from './core/reportWebVitals'
-import { GlobalStyles, StyledLayout, theme } from './styles'
+import { unregister } from 'core'
+import reportWebVitals from 'core/reportWebVitals'
+import { GlobalStyles, StyledLayout, theme } from 'Styles'
 import { ThemeProvider } from 'styled-components'
 import Routes from './routes'
-import { Header } from './components'
+import { Header } from 'Components'
 
 ReactDOM.render(
 	<React.StrictMode>
