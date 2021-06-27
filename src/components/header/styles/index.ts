@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { SearchAlt } from '@styled-icons/boxicons-regular/SearchAlt'
-
+import { device } from '../../../styles'
 export const StyledHeader = styled.header`
 	${({ theme }) => css`
 		padding: 15px;
@@ -27,14 +27,19 @@ export const StyledSearchForm = styled.form`
 		justify-content: center;
 		flex-wrap: nowrap;
 		input {
-			width: 180px;
+			width: 150px;
 			background-color: transparent;
 			border: none;
 			border-bottom: 3px solid ${theme.colors.white};
 			margin-right: 15px;
 			color: ${theme.colors.white};
-			font-size: 16px;
+			font-size: 21px;
 			font-weight: bold;
+			text-shadow: 0 2px 13px rgba(0, 0, 0, 0.81);
+
+			@media ${device.sm} {
+				width: 180px;
+			}
 		}
 		button {
 			cursor: pointer;

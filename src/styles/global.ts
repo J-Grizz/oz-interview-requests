@@ -10,15 +10,12 @@ export default createGlobalStyle`
 		}
 
 		*,
+		*:hover,
+		*:focus,
 		*:before,
 		*:after {
 			box-sizing: border-box;
 			font-family: LimeLight;
-		}
-
-		*,
-		*:focus,
-		*:hover {
 			outline: none;
 		}
 
@@ -52,10 +49,12 @@ export default createGlobalStyle`
 		}
 
 		html {
-			height: 100%;
+			height: auto;
+			min-height: 100vh;
 
 			body {
-				height: 100%;
+				height: auto;
+				min-height: 100vh;
 				margin: 0;
 
 				#root {
@@ -63,7 +62,8 @@ export default createGlobalStyle`
 					background-size: auto 100%;
 					color: ${theme.colors.white};
 					display: flex;
-					height: 100%;
+					height: auto;
+					min-height: 100vh;
 					@media ${device.sm} {
 						background: ${theme.backgrounds.background};
 						background-size: cover;
