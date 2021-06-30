@@ -19,6 +19,7 @@ export default createGlobalStyle`
 		}
 
 		p,
+		a,
 		h1,
 		h2,
 		h3,
@@ -26,6 +27,8 @@ export default createGlobalStyle`
 		h5,
 		h6 {
 			margin: 0;
+			font-family: LimeLight;
+			color: ${theme.colors.white};
 		}
 
 		h1,

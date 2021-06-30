@@ -16,5 +16,5 @@ export interface MovieObject {
 
 export interface CattedMovieObject {
 	category: string
-	movies: MovieObject
+	movies: MovieObject[]
 }
