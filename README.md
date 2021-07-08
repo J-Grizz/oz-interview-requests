@@ -1,1 +1,1 @@
-# Scofholding for quick react setup
+# Scofholding for quick TS React setup
