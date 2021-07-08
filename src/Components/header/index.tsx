@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { StyledHeader, StyledLogoContainer, StyledSearchForm, SearchIcon } from './styles'
+import { StyledHeader, StyledLogoContainer } from './styles'
 
 const Header: FC = () => {
 	return (
