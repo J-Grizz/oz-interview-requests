@@ -1,1 +1,1 @@
-# specno-assesment
+# Scofholding for quick react setup
