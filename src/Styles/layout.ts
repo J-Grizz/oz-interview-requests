@@ -3,26 +3,23 @@ import { device } from '.'
 
 const StyledLayout = styled.div`
 	${({ theme }) => css`
-		backdrop-filter: brightness(.6);
-		box-shadow: inset 0 115px 100px 10px rgb(0 0 0 / 65%);
 		width: 100vw;
-		overflow: hidden;
+		margin: auto;
+		height: 100vh;
 		display: grid;
 		.header-container {
 			grid-area: header;
+			border: 4px solid red;
 		}
 		.main-container {
 			grid-area: main;
-			width: 100%;
+			border: 4px solid magenta;
 		}
 		grid-template-rows: 100px auto;
 		row-gap: 10px;
 		grid-template-areas:
 			"header"
 			"main"
-		}
-		@media ${device.sm} {
-			padding: 15px;
 		}
 	`}
 `

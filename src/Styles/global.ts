@@ -3,9 +3,14 @@ import { device } from '.'
 
 export default createGlobalStyle`
   ${({ theme }) => css`
+		/* Initialize fonts: https://fonts.google.com/ */
 		@font-face {
 			font-family: 'Limelight';
 			src: local('Limelight'), url('Fonts/Limelight-Regular.ttf') format('truetype');
+		}
+
+		body {
+			margin: 0;
 		}
 
 		*,
@@ -31,12 +36,6 @@ export default createGlobalStyle`
 			color: ${theme.colors.white};
 		}
 
-		h1,
-		h2,
-		h3 {
-			text-shadow: 0 2px 13px rgba(0, 0, 0, 0.81);
-		}
-
 		.hidden-desktop {
 			@media ${device.sm} {
 				display: none;
@@ -47,30 +46,6 @@ export default createGlobalStyle`
 			display: none;
 			@media ${device.sm} {
 				display: block;
-			}
-		}
-
-		html {
-			height: auto;
-			min-height: 100vh;
-
-			body {
-				height: auto;
-				min-height: 100vh;
-				margin: 0;
-
-				#root {
-					background: ${theme.backgrounds.backgroundMobi};
-					background-size: auto 100%;
-					color: ${theme.colors.white};
-					display: flex;
-					height: auto;
-					min-height: 100vh;
-					@media ${device.sm} {
-						background: ${theme.backgrounds.background};
-						background-size: cover;
-					}
-				}
 			}
 		}
   `}

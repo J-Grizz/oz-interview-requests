@@ -13,15 +13,3 @@ export const StyledSliderContainer = styled.div`
 		}
 	`}
 `
-
-export const StyledSlider = styled.div`
-	${({ theme }) => css`
-		display: flex;
-		overflow-x: scroll;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-	`}
-`
