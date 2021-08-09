@@ -1,19 +1,13 @@
 import { FC } from 'react'
 import { StyledHeader, StyledLogoContainer } from './styles'
+import { ReactComponent as Logo } from 'Assets/logo.svg'
 
 const Header: FC = () => {
 	return (
 		<StyledHeader className="header-container">
 			<StyledLogoContainer>
-				{/* <img src={''} alt="Logo" /> */}
-				<h1 className="hidden-mobile">Site Title</h1>
+				<Logo className="logo" />
 			</StyledLogoContainer>
-			{/* <StyledSearchForm target="/search">
-				<input name="q" type="text" />
-				<button type="submit">
-					<SearchIcon />
-				</button>
-			</StyledSearchForm> */}
 		</StyledHeader>
 	)
 }

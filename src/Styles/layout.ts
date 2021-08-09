@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-// import { device } from '.'
 
 const StyledLayout = styled.div`
 	${({ theme }) => css`
@@ -9,13 +8,12 @@ const StyledLayout = styled.div`
 		display: grid;
 		.header-container {
 			grid-area: header;
-			border: 4px solid red;
 		}
 		.main-container {
 			grid-area: main;
 			border: 4px solid magenta;
 		}
-		grid-template-rows: 100px auto;
+		grid-template-rows: 60px auto;
 		row-gap: 10px;
 		grid-template-areas:
 			"header"
